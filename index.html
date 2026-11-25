@@ -1,263 +1,288 @@
- <!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="es-MX">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, Initial-scale=1.0">
-  <title>ICA</title> 
-           <!-- Conexcion con nuestra hoja de estilos de CSS-->
-  <link rel="stylesheet" href="style.css">
-            <!-- Conexion con nuestro tipo de letra -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poller+One&display=swap"> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conoce el servicio social, los proyectos, los eventos y los servicios de fabricación digital del Innovation Center Aragón.">
+  <title>Innovation Center Aragón | FES Aragón · UNAM</title>
+  <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/ica.css">
+  <script src="assets/vendor/bootstrap.bundle.min.js" defer></script>
 </head>
 <body>
-  <div id="Inicio"> <br> </div><!-- Espacio para el Inicio de la pagina -->
-    <div class="wrap-header-hero">
-          <!-- Mi header -->  
-    <header class="main-header" > 
-      <div class="header-wrap"> <!-- Envoltorio del Header --> <!--  -->
-        <div class="wrap-logo-header">
-          <img src="paginas/img2/Logo_Fes.png" alt="UNAM, Fes Aragon"  height="70px"> <!-- Logo de a Fes Aragon -->
-        </div>
-        <div class="wrap-nav-header"> <!-- Envoltorio del Menu de Navegación -->
-          <p>INNOVATION CENTER ARAGON</p>
-          <h2 >ICA</h2>
-          <nav class="nav-header" >
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-              <i class="toggle-menu"> <!-- Icono que se vera cuando se navegue desde un telefono -->
-                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDM4NCAzODQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTM2OCAxNTQuNjY3OTY5aC0zNTJjLTguODMyMDMxIDAtMTYtNy4xNjc5NjktMTYtMTZzNy4xNjc5NjktMTYgMTYtMTZoMzUyYzguODMyMDMxIDAgMTYgNy4xNjc5NjkgMTYgMTZzLTcuMTY3OTY5IDE2LTE2IDE2em0wIDAiIGZpbGw9IiMwMDAwMDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0zNjggMzJoLTM1MmMtOC44MzIwMzEgMC0xNi03LjE2Nzk2OS0xNi0xNnM3LjE2Nzk2OS0xNiAxNi0xNmgzNTJjOC44MzIwMzEgMCAxNiA3LjE2Nzk2OSAxNiAxNnMtNy4xNjc5NjkgMTYtMTYgMTZ6bTAgMCIgZmlsbD0iIzAwMDAwMCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTM2OCAyNzcuMzMyMDMxaC0zNTJjLTguODMyMDMxIDAtMTYtNy4xNjc5NjktMTYtMTZzNy4xNjc5NjktMTYgMTYtMTZoMzUyYzguODMyMDMxIDAgMTYgNy4xNjc5NjkgMTYgMTZzLTcuMTY3OTY5IDE2LTE2IDE2em0wIDAiIGZpbGw9IiMwMDAwMDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiPjwvcGF0aD48L2c+PC9zdmc+" />
-                <span>Menú</span>
-              </i>
-                    <!-- Lista del menu de Navegación -->  
-            
-            </label>
-            <ul class="main-menu"> 
-              <li class="menu-itema"><a href="#Inicio">INICIO</a></li>
-              <li class="menu-itemb"><a href="paginas/Horario.html">HORARIOS</a></li>
-              <li class="menu-itemc"><a href="paginas/ServicioSocial.html">SERVICIO SOCIAL</a></li>
-              <li class="menu-itemd"><a href="paginas/Proyectos.html">PROYECTOS</a></li>
-              <li class="menu-iteme"><a href="paginas/Cursos.html">CURSOS</a></li>
-            </ul>
-          </nav>
+  <a class="visually-hidden-focusable skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-3" href="#inicio">
+          <img src="assets/img/institucional.jpg" alt="UNAM · FES Aragón" width="125" height="37">
+          <strong class="brand-ica border-start ps-3">ICA</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir o cerrar el menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="menu" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li><a class="nav-link" href="#servicio-social">Servicio social</a></li>
+            <li><a class="nav-link" href="#manufactura">Manufactura</a></li>
+            <li><a class="nav-link" href="#proyectos">Proyectos</a></li>
+            <li><a class="nav-link" href="#eventos">Eventos</a></li>
+            <li><a class="btn btn-outline-ica mt-2 mt-lg-0 ms-lg-2" href="#horarios">Horarios y contacto</a></li>
+          </ul>
         </div>
       </div>
-    </header>
-    </div>
-      <!-- Tarjetas de comida -->
-      <div id="horarios"><br><br><br><br><br><br>
-        <br></div><!-- Espacio para el Inicio de la pagina -->
-      <section class="wrap section">
-        <div class="wrap-title-section">
-          <h2 class="menu-paquete"><a href="paginas/Horario.html">Horarios</a></h2>
-        </div>
-        <div class="column-4 columns">
-          <a href="paginas/Horario.html"><div style="background:url(paginas/img2/redes1.png)center;background-size: cover;" class="tarjeta-rest">
-            <div class="wrap-text_tarjeta-rest">
-              <h3>REDES DE COMPUTADORAS 1</h3>
-              <p>Cubiculo de Capacitación <br>
-              Porfesor: Antonio Gerardo Perez Muñoz</p>
-              <div class="cta-wrap_tarjeta-rest">
-                <div class="precio_tarjeta-rest">
-                  <span>HORARIO: 7:00-8:20 <br>
-                  LUNES,MIERCOLES Y VIERNES</span>
-                </div>
-              </div>
-            </div>  
-          </div></a>
-          <a href="paginas/Horario.html"><div style="background:url(paginas/img2/labredes.png)center;background-size: cover;" class="tarjeta-rest">
-            <div class="wrap-text_tarjeta-rest">
-              <h3>LAB. REDES DE COMPUTADORAS 1</h3>
-              <p>CLOUD <br>
-              Profesor: Garcia Monroy Jose Antonio</p>
-              <div class="cta-wrap_tarjeta-rest">
-                <div class="precio_tarjeta-rest">
-                  <span>HORARIO: 8:30-10:00 <br>
-                  LUNES,MIERCOLES Y VIERNES</span>
-                </div>
-              </div>
-            </div>  
-          </div></a>
-          <a href="paginas/Horario.html"><div style="background:url(paginas/img2/web.png)center;background-size: cover;" class="tarjeta-rest">
-            <div class="wrap-text_tarjeta-rest">
-              <h3>PROGRAMACION WEB 2</h3>
-              <p>Cubiculo de Capacitación <br>
-              Profesor: Velasco Agustin Aarón</p>
-              <div class="cta-wrap_tarjeta-rest">
-                <div class="precio_tarjeta-rest">
-                  <span>HORARIO: 9:00-11:00 <br>
-                  LUNES MIERCOLES Y VIENES</span>
-                </div>
-              </div>
-            </div>  
-          </div></a>
-          <a href="paginas/Horario.html"><div style="background:url(paginas/img2/tuto.png) center;background-size: cover;" class="tarjeta-rest">
-            <div class="wrap-text_tarjeta-rest">
-              <h3>CUBICULO RESERVADO</h3>
-              <p>Cubiculo reservado para proyecto</p>
-              <div class="cta-wrap_tarjeta-rest">
-                <div class="precio_tarjeta-rest">
-                  <span>HORARIO: 11:00-13:00 JUEVES <br>
-                  HORARIO: 10:00-13:00 VIERNES</span>
-                </div>
-              </div>
-            </div>  
-          </div></a>
-        </div>
-      <div id="Servicio"></div>
-      </section>
-
-      <!-- Tarjetas de comida -->
-      <section class="wrap section">
-        <div class="wrap-title-section">
-          <h2 class="menu-paquete"><a href="paginas/ServicioSocial.html">Servicio Social</a></h2>
-        </div>
-        <div class="column-4 columns">
-          <div style="background:url(assets/imagenes/Impresion3D.png)center;background-size: cover;" class="tarjeta-rest">
-            <div class="wrap-text_tarjeta-rest">
-              <h3>Impresion 3D</h3>
-              <p>Recoger la basura de los salones mas sucios ayudaria bastante a mantener limpia la escuela y tus espacios de estudio</p>
-              <div class="cta-wrap_tarjeta-rest">
-                <div class="cta_tarjeta-rest">
-                  <a href="">Información</a>
-                </div>
-              </div>
-            </div>  
+    </nav>
+  </header>
+  <main id="contenido">
+    <section id="inicio" class="hero text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-xl-6">
+            <p class="eyebrow mb-3">FES Aragón · UNAM</p>
+            <h1 class="display-2 fw-bold mb-4">Innovation<br>Center Aragón</h1>
+            <p class="lead mb-4">Un espacio universitario para diseñar, fabricar y desarrollar proyectos tecnológicos en colaboración con la comunidad de la FES Aragón.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#servicio-social" class="btn btn-oro">Explora el servicio social</a>
+              <a href="#manufactura" class="btn btn-outline-light">Servicios de manufactura</a>
+            </div>
           </div>
-          <div style="background:url(paginas/img2/libro.png)center;background-size: cover;" class="tarjeta-rest">
-            <div class="wrap-text_tarjeta-rest">
-              <h3>Ayudar a ordenar los libros</h3>
-              <p>En la biblioteca hay un gran numero de libros y muchos de ellos no estan en su lugar, para que sea mas facil buscar información en la biblioteca es recomendable siempre ponerlos en su lugar correspondiente.</p>
-              <div class="cta-wrap_tarjeta-rest">
-                <div class="precio_tarjeta-rest">
-                  <span>100 Puntos</span>
-                </div>
-                <div class="cta_tarjeta-rest">
-                  <a href="">Información</a>
-                </div>
-              </div>
-            </div>  
-          </div>
-          <div style="background:url(paginas/img2/cultural.png)center;background-size: cover;" class="tarjeta-rest">
-            <div class="wrap-text_tarjeta-rest">
-              <h3>Actividades Culturales</h3>
-              <p>Ayudar a los encargados de las actividades culturales en la creacion de eventos, escenografia o ser un pequeño asistente los ayuda a tener una carga de trabajo mas facil y que las actividads culturales sean mas divertidas y entretenidas para la comunidad.</p>
-              <div class="cta-wrap_tarjeta-rest">
-                <div class="precio_tarjeta-rest">
-                  <span>100 Puntos</span>
-                </div>
-                <div class="cta_tarjeta-rest">
-                  <a href="">Información</a>
-                </div>
-              </div>
-            </div>  
-          </div>
-          <div style="background:url(paginas/img2/tuto.png) center;background-size: cover;" class="tarjeta-rest">
-            <div class="wrap-text_tarjeta-rest">
-              <h3>Tutorias</h3>
-              <p>Si tus compañeros tienen problemas en algunas materias puedes dar pequeñas tutorias que ayudarian a los compañeros a poder entender los temas de una manera mas sencilla.</p>
-              <div class="cta-wrap_tarjeta-rest">
-                <div class="precio_tarjeta-rest">
-                  <span>100 Puntos</span>
-                </div>
-                <div class="cta_tarjeta-rest">
-                  <a href="">Información</a>
-                </div>
-              </div>
-            </div>  
-          </div>
-        </div>
-      <div id="proyecto"></div>
-      </section>
-        <!-- Proyectos -->
-
-    <section class="section">
-      <div class="wrap-title-section">
-        <h2 class="menu-paquete"><a href="paginas/Proyectos.html">Proyectos</a></h2>
-      </div>
-      <div class="column-3">
-        <a href="paginas/Proyectos.html"><div class="imagen-galeria" >
-          <img src="paginas/img2/ICA/45Aniv/45aniv.jpg" alt="Recoger papeles" width="400" height="250">
-          <h2 class="menu-plato">45 Aniversario</h2>
-          <p class="menu-plato1">Proyecto desarrollado por alumnos de Ingeniería en Computación para conmemorar el 45 aniversario de la Facultad de Estudios Superiores Aragón. El cual incluye 3 mini juegos desarrollados en los espacios de nuestras facultad, donde tendrás que defender a la FES de una invasión alienígena para evitar que los alumnos sean abducidos, o tendrás que trabajar en los invernaderos para recolectar verduras y vegetales evitando cosechar basura y ayuda a deshacerse de los fantasmas que aterrocidan el Centro Tecnológico Aragón.</p>
-          <p class="menu-plato">ESTADO-FINALIZADO</p>
-        </div></a>
-
-        <a href="paginas/Proyectos.html"><div class="imagen-galeria">
-          <img src="paginas/img2/ICA/Aramon/Aramon ICO Edition.jpg" alt="Aramon ICO Edition" width="400" height="250">
-          <p class="menu-plato">Aramon ICO Edition</p>
-          <p class="menu-plato1">Proyecto que toma las mecánicas de los Primeros juegos de Pokémon y adapta el entorno y las mecánicas de juego a nuestra FES Aragón. Como alumno de la carrera de Ingeniería en Computación tendrás que demostrar a tus profesores que tienes los conocimientos suficientes de Base datos, Inteligencia Artificial, programación y de las demás áreas necesarias para conseguir las medallas y poder conseguir tu título de “ICO Maestro”.</p>
-          <p class="menu-plato">ESTADO-EN DESARROLLO</p>
-        </div></a>
-
-        <a href="paginas/Proyectos.html"><div class="imagen-galeria">
-          <img src="paginas/img2/ICA/Engranes Ingenierias/engrane1.jpeg" alt="Engranes Ingenierias" width="400" height="250">
-          <p class="menu-plato">Engranes Ingenierias</p>
-          <p class="menu-plato1">Proyecto desarrollado en conjunto con las Ingenierías de la FES Aragón como iniciativas de identidad y colaboración entre carreras.Este proyecto consta de un rompecabezas 3D impreso con tecnología FDM 6 engranajes los cuales contienen identifican a las 5 carreras de ingeniería impartidas en la Facultad:<br><br>
-          Ingeniería en Computación <br>
-          IngenieríaEléctrica-Electrónica <br>
-          Ingeniería Civil <br>
-          Ingeniería Mecánica <br>
-          Ingeniería Industrial</p>
-          <p class="menu-plato">ESTADO-FINALIZADO</p>
-        </div></a>
         </div>
       </div>
-      <div id="curso"></div>
+    </section>
+    <section id="servicio-social" class="section-pad">
+      <div class="container">
+        <div class="row gy-3 align-items-end mb-4">
+          <div class="col-lg-8">
+            <p class="eyebrow">Participación estudiantil</p>
+            <h2 class="section-title">Realiza tu servicio social en el ICA</h2>
+            <p class="section-intro mb-0">Aplica lo que aprendes en clase y colabora en proyectos de diseño, fabricación digital, electrónica y desarrollo de videojuegos.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a class="btn btn-outline-ica" href="#">Consulta requisitos y disponibilidad</a>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-3">
+          <div class="col"><article class="card social-card h-100"><div class="card-body p-4"><h3 class="h5">Modelado e impresión 3D</h3><p class="mb-0">Diseña piezas, prepara modelos para impresión y prueba prototipos físicos.</p></div></article></div>
+          <div class="col"><article class="card social-card h-100"><div class="card-body p-4"><h3 class="h5">Circuitos y microcontroladores</h3><p class="mb-0">Integra sensores, componentes y programación en prototipos electrónicos.</p></div></article></div>
+          <div class="col"><article class="card social-card h-100"><div class="card-body p-4"><h3 class="h5">Diseño 2D y corte laser</h3><p class="mb-0">Diseña piezas en 2D, prepara archivos para corte láser y fabrica prototipos</p></div></article></div>
+          <div class="col"><article class="card social-card h-100"><div class="card-body p-4"><h3 class="h5">Videojuegos</h3><p class="mb-0">Colabora en el diseño de escenarios, la programación y las pruebas de juegos.</p></div></article></div>
+        </div>
+      </div>
+    </section>
+    <section id="manufactura" class="section-pad surface">
+      <div class="container">
+        <p class="eyebrow">Fabricación</p>
+        <h2 class="section-title">Servicios de manufactura</h2>
+        <p class="section-intro mb-4">Comparte tu archivo, las dimensiones y la cantidad de piezas para consultar la viabilidad, los costos y los tiempos de entrega.</p>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <article class="card service-card h-100">
+              <img class="card-img-top media" src="assets/img/impresion.webp" alt="Impresora 3D fabricando una pieza" loading="lazy">
+              <div class="card-body p-4 d-flex flex-column align-items-start">
+                <h3 class="h4">Impresión 3D</h3>
+                <p>Fabricamos piezas y objetos personalizados en PLA para proyectos escolares, creativos y funcionales.</p>
+                <a class="btn btn-outline-ica mt-auto" 
+                  href="https://wa.me/5212381010045?text=Hola, me gustaria cotizar una pieza en impresión 3D. ¿Qué datos y archivo necesito enviar?"
+                  target="_blank"
+                  rel="noopener noreferrer">Consultar impresión 3D
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card service-card h-100">
+              <div class="laser-panel media" aria-hidden="true"><span></span></div>
+              <div class="card-body p-4 d-flex flex-column align-items-start">
+                <h3 class="h4">Corte láser</h3>
+                <p>Fabricamos piezas y objetos personalizados en MDF y acrílico para proyectos escolares, creativos y decorativos. Contamos con materiales de 2.5 mm y 3 mm y realizamos cortes en espesores de hasta 5 mm.</p>
+                <a class="btn btn-outline-ica mt-auto" href="https://wa.me/5212381010045?text=Hola, me gustaría cotizar un corte láser. ¿Qué datos necesito enviar para consultar el material y el espesor?" target="_blank"
+                  rel="noopener noreferrer">Consultar corte láser</a>
+                
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
     </section>
 
-      <!-- Articulos de Blog  -->
+    <section id="proyectos" class="section-pad">
+      <div class="container">
+        <p class="eyebrow">Trabajo de la comunidad</p>
+        <h2 class="section-title mb-4">Proyectos del ICA</h2>
 
-  <section class="section">
-    <div class="wrap-title-section">
-      <h2 class="menu-paquete"><a href="paginas/Cursos.html">Cursos</a></h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <article class="card h-100">
+              <img
+                class="card-img-top media"
+                src="assets/img/engranes.webp"
+                alt="Engranes del rompecabezas de las ingenierías"
+                loading="lazy"
+              >
+
+              <div class="card-body d-flex flex-column align-items-start p-4">
+                <h3 class="h5 card-title mb-2">Engranes de Ingeniería</h3>
+                <p class="card-text mb-0">
+                  Rompecabezas impreso en 3D que representa a las cinco carreras
+                  de ingeniería de la FES Aragón.
+                </p>
+
+                <div class="mt-auto pt-4">
+                  <a
+                    class="btn btn-outline-ica px-3"
+                    href="#"
+                    aria-label="Ver proyecto Engranes de Ingeniería"
+                  >Conocer proyecto</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card h-100">
+              <img
+                class="card-img-top media"
+                src="assets/img/aniversario.webp"
+                alt="Arte del videojuego por el 45.º aniversario de la FES Aragón"
+                loading="lazy"
+              >
+
+              <div class="card-body d-flex flex-column align-items-start p-4">
+                <h3 class="h5 card-title mb-2">Aragón Valley: The Game</h3>
+                <p class="card-text mb-0">
+                  Tres minijuegos ambientados en espacios de la Facultad para
+                  conmemorar el 45.º aniversario de la FES Aragón.
+                </p>
+
+                <div class="mt-auto pt-4">
+                  <a
+                    class="btn btn-outline-ica px-3"
+                    href="http://132.248.44.98/mapeofes/"
+                    aria-label="Ver proyecto Aragón Valley: The Game"
+                  >Conocer proyecto</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card h-100">
+              <img
+                class="card-img-top media"
+                src="assets/img/aramon.webp"
+                alt="Arte de Aramon ICO Edition"
+                loading="lazy"
+              >
+
+              <div class="card-body d-flex flex-column align-items-start p-4">
+                <h3 class="h5 card-title mb-2">Aramon ICO Edition</h3>
+                <p class="card-text mb-0">
+                  Videojuego ambientado en la FES Aragón, con retos inspirados
+                  en las materias de Ingeniería en Computación.
+                </p>
+
+                <div class="mt-auto pt-4">
+                  <a
+                    class="btn btn-outline-ica px-3"
+                    href="#"
+                    aria-label="Ver proyecto Aramon ICO Edition"
+                  >Conocer proyecto</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section id="eventos" class="section-pad surface">
+  <div class="container">
+    <p class="eyebrow">Vinculación universitaria</p>
+    <h2 class="section-title mb-4">Eventos y participación</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="col">
+        <article class="card h-100">
+          <div class="card-body d-flex flex-column align-items-start p-4">
+            <h3 class="h5 card-title mb-3">Feria de Productores 2026</h3>
+            <p class="card-text mb-0">
+              En nuestro stand presentamos a la comunidad universitaria
+              productos de identidad institucional diseñados y fabricados
+              por el equipo del ICA.
+            </p>
+
+            <div class="mt-auto pt-4">
+              <a class="btn btn-outline-ica" href="#">
+                Ver constancia
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col">
+        <article class="card h-100">
+          <div class="card-body d-flex flex-column align-items-start p-4">
+            <h3 class="h5 card-title mb-3">Semana de Ingenierías</h3>
+            <p class="card-text mb-2">
+              El ICA contribuyó con proyectos para dos ediciones de la Semana
+              de Ingenierías.
+            </p>
+            <ul class="mb-0 ps-3">
+              <li class="mb-1"><strong>2024</strong> · Cubo de la Semana de Ingenierías</li>
+              <li><strong>2025</strong> · Cofre de integración</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="col">
+        <article class="card h-100">
+          <div class="card-body d-flex flex-column align-items-start p-4">
+            <h3 class="h5 card-title mb-3">Cursos intersemestrales</h3>
+            <p class="card-text mb-0">
+              El ICA ha impartido cursos de programación, modelado 3D,
+              diseño digital y desarrollo de videojuegos.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="horarios" class="section-pad contact text-white" aria-labelledby="titulo-ica">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-7">
+          <h2 id="titulo-ica" class="section-title mb-3">Acerca del ICA</h2>
+          <p class="lead mb-0">
+            El Innovation Center Aragón (ICA) forma parte de la
+            <strong>Secretaría de Vinculación y Desarrollo</strong>
+            de la Facultad de Estudios Superiores Aragón, UNAM.
+          </p>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="contact-card rounded-3 p-4">
+            <h3 class="eyebrow mb-2">Horario de atención</h3>
+            <p class="h3 fw-semibold mb-0">
+              <time datetime="09:00">9:00 a. m.</time> a
+              <time datetime="20:30">8:30 p. m.</time>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer class="main-footer">
-    <div class="wrap-footer">
-      <div class="text-element-footer element-footer">
-        <h3>Puma Points</h3>
-        <p>Puma points es una idea de un grupo de estudiantes que busca mejorar la calidad de estudio para la comunidad Fes Aragon y pronto en toda la UNAM, este proyecto vio la luz gracias a diversas problematicas que buscamos solucionar con nuestra aplicacion.</p>
-      </div>
-
-      <div class="text-element-footer element-footer">
-        <h5>Más información</h5>
-        <ul>
-            <li ><a href="#Inicio">INICIO</a></li>
-            <li ><a href="#horarios">HORARIOS</a></li>
-            <li ><a href="#Servicio">SERVICIO SOCIAL</a></li>
-            <li ><a href="#proyecto">PROYECTOS</a></li>
-            <li ><a href="#curso">CURSOS</a></li>
-        </ul>
-      </div>
-      <div class="rrss-element-footer element-footer">
-        <h5>Redes Sociales</h5>
-        <ul>
-          <li><a href="" target="_Blank">
-            <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtNTEyIDc1djM2MmMwIDQxLjM5ODQzOC0zMy42MDE1NjIgNzUtNzUgNzVoLTEyMWwtMzAtMzBoLTMwbC0zMCAzMGgtMTUxYy00MS4zOTg0MzggMC03NS0zMy42MDE1NjItNzUtNzV2LTM2MmMwLTQxLjM5ODQzOCAzMy42MDE1NjItNzUgNzUtNzVoMzYyYzQxLjM5ODQzOCAwIDc1IDMzLjYwMTU2MiA3NSA3NXptMCAwIiBmaWxsPSIjNzk4NGViIi8+PHBhdGggZD0ibTUxMiA3NXYzNjJjMCA0MS4zOTg0MzgtMzMuNjAxNTYyIDc1LTc1IDc1aC0xMjFsLTMwLTMwaC0xNXYtNDgyaDE2NmM0MS4zOTg0MzggMCA3NSAzMy42MDE1NjIgNzUgNzV6bTAgMCIgZmlsbD0iIzQ2NjFkMSIvPjxwYXRoIGQ9Im0zMTYgMTgwdjYwaDkwbC0xNSA5MGgtNzV2MTgyaC05MHYtMTgyaC02MHYtOTBoNjB2LTYwYzAtMzMuMzAwNzgxIDE4LjMwMDc4MS02Mi40MDIzNDQgNDUtNzggMTMuMTk5MjE5LTcuNSAyOC44MDA3ODEtMTIgNDUtMTJoOTB2OTB6bTAgMCIgZmlsbD0iI2VjZWNmMSIvPjxwYXRoIGQ9Im0zMTYgMTgwdjYwaDkwbC0xNSA5MGgtNzV2MTgyaC00NXYtNDEwYzEzLjE5OTIxOS03LjUgMjguODAwNzgxLTEyIDQ1LTEyaDkwdjkwem0wIDAiIGZpbGw9IiNlMmUyZTciLz48L3N2Zz4=" alt="Facebook">
-          </a></li>
-          <li><a href="">
-            <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIC0zMSA1MTIgNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0yMTEgMjcwLTQwLjkxNzk2OSA0My42NzU3ODEgMTAuOTE3OTY5IDc2LjMyNDIxOSAxMjAtOTB6bTAgMCIgZmlsbD0iIzAwYzBmMSIvPjxwYXRoIGQ9Im0wIDE4MCAxMjEgNjAgOTAgMzAgMjEwIDE4MCA5MS00NTB6bTAgMCIgZmlsbD0iIzc2ZTJmOCIvPjxwYXRoIGQ9Im0xMjEgMjQwIDYwIDE1MCAzMC0xMjAgMjEwLTE4MHptMCAwIiBmaWxsPSIjMjVkOWY4Ii8+PC9zdmc+" alt="Telegram">
-          </a></li>
-          <li><a href="">
-            <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMjU2IDBjLTE0MC42OTkyMTkgMC0yNTYgMTE1LjMwMDc4MS0yNTYgMjU2IDAgNDYuNSAxMi41OTc2NTYgOTEuNSAzNi4zMDA3ODEgMTMxLjEwMTU2MmwtMzYuMzAwNzgxIDEyNC44OTg0MzggMTI0Ljg5ODQzOC0zNi4zMDA3ODFjMzkuNjAxNTYyIDIzLjY5OTIxOSA4NC42MDE1NjIgMzYuMzAwNzgxIDEzMS4xMDE1NjIgMzYuMzAwNzgxIDE0MC42OTkyMTkgMCAyNTYtMTE1LjMwMDc4MSAyNTYtMjU2cy0xMTUuMzAwNzgxLTI1Ni0yNTYtMjU2em0wIDAiIGZpbGw9IiMwMGRkN2IiLz48cGF0aCBkPSJtNTEyIDI1NmMwIDE0MC42OTkyMTktMTE1LjMwMDc4MSAyNTYtMjU2IDI1NnYtNTEyYzE0MC42OTkyMTkgMCAyNTYgMTE1LjMwMDc4MSAyNTYgMjU2em0wIDAiIGZpbGw9IiMwMGNjNzEiLz48cGF0aCBkPSJtNDE3LjE5OTIxOSAzNjQuMzAwNzgxLTEyIDExLjY5OTIxOWMtMTYuODAwNzgxIDE2LjgwMDc4MS01NS44MDA3ODEgMTUuNTk3NjU2LTgwLjY5OTIxOSAxMC44MDA3ODEtMjIuMTk5MjE5LTQuMTk5MjE5LTQ2LTE0LjEwMTU2Mi02OC41LTI3LjkwMjM0My02MS4xOTkyMTktMzcuMTk5MjE5LTExNi42OTkyMTktMTAzLjE5OTIxOS0xMzAuMTk5MjE5LTE2Mi41OTc2NTctOS4zMDA3ODEtNDAuMjAzMTI1LTQuMTk5MjE5LTc1IDktODguNWwxMi0xMmM2LjYwMTU2My02LjMwMDc4MSAxNy4wOTc2NTctNi4zMDA3ODEgMjMuNjk5MjE5IDBsNDcuNjk5MjE5IDQ3LjY5OTIxOWMzLjMwMDc4MSAzLjMwMDc4MSA1LjEwMTU2MiA3LjUgNS4xMDE1NjIgMTJzLTEuODAwNzgxIDguNjk5MjE5LTUuMTAxNTYyIDEybC0xMiAxMS42OTkyMTljLTEyLjg5ODQzOCAxMy4xOTkyMTktMTIuODk4NDM4IDM0LjUgMCA0Ny42OTkyMTlsNDkuODAwNzgxIDQ4LjkwMjM0MyAyOS4wOTc2NTYgMjguODAwNzgxYzEzLjIwMzEyNSAxMy4xOTkyMTkgMzUuNTAzOTA2IDEzLjE5OTIxOSA0OC43MDMxMjUgMGwxMS42OTkyMTktMTIuMDAzOTA2YzYuMzAwNzgxLTYgMTcuNjk5MjE5LTYgMjQgMGw0Ny42OTkyMTkgNDcuNzAzMTI1YzYuMzAwNzgxIDYuNTk3NjU3IDYuNjAxNTYyIDE3LjA5NzY1NyAwIDI0em0wIDAiIGZpbGw9IiNlY2VjZjEiLz48cGF0aCBkPSJtNDE3LjE5OTIxOSAzNjQuMzAwNzgxLTEyIDExLjY5OTIxOWMtMTYuODAwNzgxIDE2LjgwMDc4MS01NS44MDA3ODEgMTUuNTk3NjU2LTgwLjY5OTIxOSAxMC44MDA3ODEtMjIuMTk5MjE5LTQuMTk5MjE5LTQ2LTE0LjEwMTU2Mi02OC41LTI3LjkwMjM0M3YtODMuMDk3NjU3bDI5LjA5NzY1NiAyOC44MDA3ODFjMTMuMjAzMTI1IDEzLjE5OTIxOSAzNS41MDM5MDYgMTMuMTk5MjE5IDQ4LjcwMzEyNSAwbDExLjY5OTIxOS0xMi4wMDM5MDZjNi4zMDA3ODEtNiAxNy42OTkyMTktNiAyNCAwbDQ3LjY5OTIxOSA0Ny43MDMxMjVjNi4zMDA3ODEgNi41OTc2NTcgNi42MDE1NjIgMTcuMDk3NjU3IDAgMjR6bTAgMCIgZmlsbD0iI2UyZTJlNyIvPjwvc3ZnPg==" alt="whatsapp">
-          </a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-creds">
-      <div class="copy-creds">
-        <p>©2022 · Todos los derechos reservados.</p>
-      </div>
-      <div class="legal-creds">
-        <ul>
-          <li><a href="">Política de Privacidad</a></li>
-          <li><a href="">Plítica de Cookies</a></li>
-          <li><a href="">Aviso Legal</a></li>
-        </ul>
-      </div>
+  </main>
+  <footer class="site-footer py-4">
+    <div class="container d-flex flex-wrap gap-3 justify-content-between align-items-center">
+      <span>Innovation Center Aragón · FES Aragón, UNAM</span>
+      <a target="_blank" href="https://www.aragon.unam.mx/">Portal de la FES Aragón</a>
     </div>
   </footer>
+  <script src="assets/ica.js" defer></script>
 </body>
 </html>

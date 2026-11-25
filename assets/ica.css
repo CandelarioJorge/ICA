@@ -1,0 +1,77 @@
+:root {
+  --ica-navy: #081e39;
+  --ica-blue: #143b63;
+  --ica-gold: #ebc577;
+  --ica-accent: #78561e;
+  --ica-surface: #f2f5f8;
+  --bs-body-color: #142840;
+  --bs-link-color-rgb: 20, 59, 99;
+}
+section[id] { scroll-margin-top: 6rem; }
+.skip-link { position: fixed; top: 1rem; left: 1rem; z-index: 1050; background: white; padding: .75rem; }
+.navbar { border-top: 4px solid var(--ica-gold); }
+.navbar .nav-link { color: var(--ica-navy); font-weight: 600; }
+.brand-ica { color: var(--ica-navy); letter-spacing: .06em; }
+.hero {
+  background: linear-gradient(90deg, #081e39 32%, rgba(8,30,57,.93) 43%, rgba(8,30,57,.3) 72%, rgba(8,30,57,.05) 100%),
+    url("img/impresion.webp") right 17% / 62% auto no-repeat var(--ica-navy);
+  padding-block: clamp(5rem, 10vw, 9rem);
+}
+.hero h1 { letter-spacing: -.055em; line-height: .99; }
+.hero .lead { max-width: 34rem; color: #e1ebf6; }
+.eyebrow { color: var(--ica-accent); text-transform: uppercase; letter-spacing: .14em; font-size: .76rem; font-weight: 750; margin-bottom: .6rem; }
+.hero .eyebrow, .contact .eyebrow { color: var(--ica-gold); }
+.section-pad { padding-block: clamp(3.5rem, 7vw, 6rem); }
+.section-title { font-size: clamp(1.9rem, 4vw, 3.2rem); font-weight: 750; letter-spacing: -.045em; }
+.section-intro { max-width: 47rem; color: #435671; font-size: 1.08rem; }
+.surface { background: var(--ica-surface); }
+.card { --bs-card-border-color: #d7e0e9; --bs-card-border-radius: 1rem; overflow: hidden; }
+.social-card { border-top: 3px solid var(--ica-gold); }
+.card p { color: #435671; }
+.media { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.service-card .media { aspect-ratio: 2.4; object-position: center 18%; }
+.laser-panel {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, #1c4162, #081e39 68%);
+}
+.laser-panel span {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 66% 70%, #ffe4a0 0, #db803f 1%, transparent 14%),
+    linear-gradient(116deg, transparent 63%, #fad393 63.2%, transparent 63.7%) center top / 100% 70% no-repeat,
+    repeating-linear-gradient(0deg, transparent 0 14px, #eac47733 15px 16px) center bottom / 100% 32% no-repeat;
+}
+.btn-oro {
+  --bs-btn-color: #081e39;
+  --bs-btn-bg: #ebc577;
+  --bs-btn-border-color: #ebc577;
+  --bs-btn-hover-color: #081e39;
+  --bs-btn-hover-bg: #f9d99b;
+  --bs-btn-hover-border-color: #f9d99b;
+  --bs-btn-active-color: #081e39;
+  --bs-btn-active-bg: #dfb660;
+  --bs-btn-active-border-color: #dfb660;
+  --bs-btn-focus-shadow-rgb: 235, 197, 119;
+  font-weight: 650;
+}
+.btn-outline-ica {
+  --bs-btn-color: #143b63;
+  --bs-btn-border-color: #143b63;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #143b63;
+  --bs-btn-hover-border-color: #143b63;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #143b63;
+  --bs-btn-active-border-color: #143b63;
+  --bs-btn-focus-shadow-rgb: 20, 59, 99;
+  font-weight: 650;
+}
+.contact { background: var(--ica-navy); }
+.contact-card { background: #ffffff0d; border: 1px solid #ffffff42; }
+.contact-card summary { cursor: pointer; }
+.site-footer { background: #061426; color: #dae5f2; }
+.site-footer a { color: #dae5f2; }
+@media (max-width: 767.98px) {
+  .hero { background: linear-gradient(90deg, #081e39f5, #081e39bd), url("img/impresion.webp") center 14% / cover; }
+}

@@ -7,6 +7,7 @@
   <title>Innovation Center Aragón | FES Aragón · UNAM</title>
   <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
   <link rel="stylesheet" href="assets/ica.css">
+  <link rel="stylesheet" href="./CSS/estilosTexto.css">
   <script src="assets/vendor/bootstrap.bundle.min.js" defer></script>
 </head>
 <body>
@@ -110,88 +111,9 @@
         <p class="eyebrow">Trabajo de la comunidad</p>
         <h2 class="section-title mb-4">Proyectos del ICA</h2>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          <div class="col">
-            <article class="card h-100">
-              <img
-                class="card-img-top media"
-                src="assets/img/engranes.webp"
-                alt="Engranes del rompecabezas de las ingenierías"
-                loading="lazy"
-              >
-
-              <div class="card-body d-flex flex-column align-items-start p-4">
-                <h3 class="h5 card-title mb-2">Engranes de Ingeniería</h3>
-                <p class="card-text mb-0">
-                  Rompecabezas impreso en 3D que representa a las cinco carreras
-                  de ingeniería de la FES Aragón.
-                </p>
-
-                <div class="mt-auto pt-4">
-                  <a
-                    class="btn btn-outline-ica px-3"
-                    href="#"
-                    aria-label="Ver proyecto Engranes de Ingeniería"
-                  >Conocer proyecto</a>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col">
-            <article class="card h-100">
-              <img
-                class="card-img-top media"
-                src="assets/img/aniversario.webp"
-                alt="Arte del videojuego por el 45.º aniversario de la FES Aragón"
-                loading="lazy"
-              >
-
-              <div class="card-body d-flex flex-column align-items-start p-4">
-                <h3 class="h5 card-title mb-2">Aragón Valley: The Game</h3>
-                <p class="card-text mb-0">
-                  Tres minijuegos ambientados en espacios de la Facultad para
-                  conmemorar el 45.º aniversario de la FES Aragón.
-                </p>
-
-                <div class="mt-auto pt-4">
-                  <a
-                    class="btn btn-outline-ica px-3"
-                    href="http://132.248.44.98/mapeofes/"
-                    aria-label="Ver proyecto Aragón Valley: The Game"
-                  >Conocer proyecto</a>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col">
-            <article class="card h-100">
-              <img
-                class="card-img-top media"
-                src="assets/img/aramon.webp"
-                alt="Arte de Aramon ICO Edition"
-                loading="lazy"
-              >
-
-              <div class="card-body d-flex flex-column align-items-start p-4">
-                <h3 class="h5 card-title mb-2">Aramon ICO Edition</h3>
-                <p class="card-text mb-0">
-                  Videojuego ambientado en la FES Aragón, con retos inspirados
-                  en las materias de Ingeniería en Computación.
-                </p>
-
-                <div class="mt-auto pt-4">
-                  <a
-                    class="btn btn-outline-ica px-3"
-                    href="#"
-                    aria-label="Ver proyecto Aramon ICO Edition"
-                  >Conocer proyecto</a>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
+        <p id="estado-proyectos" class="mb-0" role="status">Cargando proyectos…</p>
+        <div id="lista-proyectos" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"></div>
+        
       </div>
     </section>
 
@@ -284,5 +206,6 @@
     </div>
   </footer>
   <script src="assets/ica.js" defer></script>
+  <script type="module" src="./JS/TarjetasProyectos.js"></script>
 </body>
 </html>

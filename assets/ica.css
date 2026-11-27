@@ -75,3 +75,5 @@ section[id] { scroll-margin-top: 6rem; }
 @media (max-width: 767.98px) {
   .hero { background: linear-gradient(90deg, #081e39f5, #081e39bd), url("img/impresion.webp") center 14% / cover; }
 }
+
+
